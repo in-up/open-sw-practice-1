@@ -8,7 +8,7 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    return a / b
+    return a / b if b != 0 else None
 
 while True:
     formula = input("두 정수와 연산자를 포함한 수식 입력, 또는 'q'로 프로그램 종료 (예: 3 + 4)\n-> ")
